@@ -147,3 +147,7 @@ footer {
   padding-block: 2rem;
 }
 
+footer a {
+  color: inherit;
+  text-underline-offset: .25em;
+}
