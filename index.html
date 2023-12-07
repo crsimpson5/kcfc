@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Kansas City FC</h1>
+        <nav>
+          <ul>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#tickets">Buy Tickets</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section>
+          <h2>The 2024 Season Begins Soon - Tickets Available</h2>
+          <p>
+            <button id="cta"><a href="#tickets">Buy Tickets</a></button>
+          </p>
+        </section>
+
+        <div id="slideshow">
+          <img src="assets/ball.jpg" alt="" />
+          <img src="assets/players.jpg" alt="" />
+        </div>
+
+        <section>
+          <h2 id="schedule">Schedule</h2>
+          <table>
+            <thead></thead>
+            <tbody>
+              <tr>
+                <td>1/27</td>
+                <td>Kansas City FC</td>
+                <td>vs</td>
+                <td>
+                  <a
+                    href="#"
+                    data-title="New York's Record: 6W 1D 1L"
+                    class="city"
+                  >
+                    New York
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>2/4</td>
+                <td>Kansas City FC</td>
+                <td>at</td>
+                <td>
+                  <a
+                    href="#"
+                    data-title="Orlando's Record: 4W 2D 1L"
+                    class="city"
+                  >
+                    Orlando
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>2/11</td>
+                <td>Kansas City FC</td>
+                <td>at</td>
+                <td>
+                  <a
+                    href="#"
+                    data-title="Los Angeles's Record: 2W 1D 4L"
+                    class="city"
+                  >
+                    Los Angeles
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>2/18</td>
+                <td>Kansas City FC</td>
+                <td>vs</td>
+                <td>
+                  <a
+                    href="#"
+                    data-title="Austin's Record: 2W 4D 3L"
+                    class="city"
+                  >
+                    Austin
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>3/5</td>
+                <td>Kansas City FC</td>
+                <td>at</td>
+                <td>
+                  <a
+                    href="#"
+                    data-title="Portland's Record: 3W 4D 1L"
+                    class="city"
+                  >
+                    Portland
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2 id="tickets">Buy Tickets</h2>
+          <select name="" id="">
+            <option value="">1/27 Kansas City FC vs New York</option>
+            <option value="">2/18 Kansas City FC Austin</option>
+          </select>
+
+          <div class="flex">
+            <div>
+              <h3>Select Seating Section</h3>
+              <div class="seating">
+                <div
+                  class="seating-section"
+                  data-name="General Admission"
+                  data-price="25"
+                ></div>
+                <div
+                  class="seating-section"
+                  data-name="North Section"
+                  data-price="42"
+                ></div>
+                <div
+                  class="seating-section"
+                  data-name="General Admission"
+                  data-price="25"
+                ></div>
+                <div
+                  class="seating-section"
+                  data-name="West Section"
+                  data-price="34"
+                ></div>
+                <div class="pitch"></div>
+                <div
+                  class="seating-section"
+                  data-name="East Section"
+                  data-price="34"
+                ></div>
+                <div
+                  class="seating-section"
+                  data-name="General Admission"
+                  data-price="25"
+                ></div>
+                <div
+                  class="seating-section"
+                  data-name="South Section"
+                  data-price="42"
+                ></div>
+                <div
+                  class="seating-section"
+                  data-name="General Admission"
+                  data-price="25"
+                ></div>
+              </div>
+            </div>
+            <div>
+              <h3 id="section-name">General Admission</h3>
+              <p id="seating-details">$25</p>
+              <button>Buy</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
